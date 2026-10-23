@@ -2,7 +2,11 @@
 
 An Omarchy bar widget that shows the battery of your Logitech keyboard and mouse. It is a Linux port of the macOS menu bar app [PeriBattery](https://github.com/juancasanueva/SWIFTUI_battery).
 
-- **Bar**: keyboard glyph and percentage, a hairline separator, mouse glyph and percentage, and a bolt while a device charges. Levels at 20% or below turn the theme's urgent color.
+<p align="center">
+  <img src="preview.png" width="390" alt="PeriBattery in the Omarchy bar with its panel open, showing an MX Keys keyboard at about 95% and a PRO X SUPERLIGHT 2 SE mouse at 93%">
+</p>
+
+- **Bar**: keyboard glyph and percentage, a hairline separator, mouse glyph and percentage, and a bolt while a device charges. Levels at 20% or below turn the theme's urgent color; a charging device stays in the regular foreground color.
 - **Panel**: one card per device with its name, level, charging state, a gauge and how it is connected.
 - With no Logitech device online the bar shows a single muted glyph and the panel says so.
 
