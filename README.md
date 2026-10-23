@@ -43,6 +43,18 @@ omarchy plugin enable juancasanueva.peribattery
 - Left-click the widget to open the panel. Esc closes it.
 - Right-click to show or hide the percentages in the bar.
 
+## Troubleshooting
+
+### The keyboard shows no percentage after unplugging its charging cable
+
+While a keyboard such as the MX Keys charges, it reports no battery level, so the kernel sets `capacity_level` to `Unknown`. When you unplug the cable, the keyboard reports that it is discharging again but does not send a new level, and the kernel does not ask for one. It stays `Unknown` until the keyboard reconnects.
+
+Turn the keyboard off and on with its power switch. It reconnects, the kernel reads the level again, and the percentage returns within a few seconds. You can check what the kernel has with:
+
+```bash
+cat /sys/class/power_supply/hidpp_battery_*/capacity_level
+```
+
 ## Removing
 
 ```bash
