@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "juancasanueva.peribattery",
+  "name": "PeriBattery",
+  "version": "0.1.0",
+  "author": "Juan Casanueva",
+  "license": "MIT",
+  "description": "Battery levels of Logitech keyboards and mice, read from the kernel (sysfs).",
+  "kinds": ["bar-widget"],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "PeriBattery",
+    "description": "Keyboard and mouse battery for Logitech receivers. Left-click for details, right-click to toggle percentages.",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "showPercentage": true
+    },
+    "schema": [
+      {
+        "key": "showPercentage",
+        "type": "boolean",
+        "label": "Show percentages",
+        "defaultValue": true
+      }
+    ]
+  }
+}
