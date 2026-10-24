@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "juancasanueva.peribattery",
   "name": "PeriBattery",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Juan Casanueva",
   "license": "MIT",
   "description": "Battery levels of Logitech keyboards and mice, read from the kernel (sysfs).",
